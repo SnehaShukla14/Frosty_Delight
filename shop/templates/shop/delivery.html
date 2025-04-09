@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery - Frosty Delight</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Frosty Delight</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/order">Order</a></li>
+                <li class="nav-item"><a class="nav-link" href="/delivery">Delivery</a></li>
+                <li class="nav-item"><a class="nav-link" href="/catering">Catering</a></li>
+                <li class="nav-item"><a class="nav-link" href="/payment">Payment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Delivery Section -->
+    <div class="container my-5">
+        <h2 class="text-center">Ice Cream Delivery</h2>
+        <p class="text-center">Get your favorite Frosty Delight delivered to your door!</p>
+        
+        <form>
+            <div class="form-group">
+                <label for="deliveryName">Full Name:</label>
+                <input type="text" class="form-control" id="deliveryName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="deliveryAddress">Delivery Address:</label>
+                <textarea class="form-control" id="deliveryAddress" rows="4" placeholder="Enter delivery address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="deliveryDate">Preferred Delivery Date:</label>
+                <input type="date" class="form-control" id="deliveryDate" required>
+            </div>
+            <div class="form-group">
+                <label for="deliveryTime">Preferred Delivery Time:</label>
+                <input type="time" class="form-control" id="deliveryTime" required>
+            </div>
+            <div class="form-group">
+                <label for="flavorChoice">Choose Your Flavor:</label>
+                <select class="form-control" id="flavorChoice" required>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="mint">Mint</option>
+                    <option value="cookie-dough">Cookie Dough</option>
+                    <option value="sorbet">Sorbet</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Place Delivery Order</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Frosty Delight. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

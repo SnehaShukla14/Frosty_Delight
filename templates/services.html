@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Services{% endblock title %}
+    
+{% block body %}
+
+<div class="container my-5">
+    <h2 class="text-center">Our Ice Cream Services</h2>
+    <p class="text-center">We offer a variety of ice cream catering and delivery services for all kinds of events. Here are the services we provide:</p>
+    
+    <ul>
+        <li><strong>Catering:</strong> We provide ice cream services for birthdays, weddings, and corporate events. Let us bring a sweet touch to your occasion!</li>
+        <li><strong>Delivery:</strong> Enjoy the convenience of having your favorite ice cream delivered straight to your doorsteps!</li>
+        <li><strong>Custom Orders:</strong> We can create special ice cream flavors or themed treats for your special events or business promotions.</li>
+    </ul>
+
+    <div class="text-center">
+        <a href="/order" class="btn btn-primary m-2">Place Order</a>
+        <a href="/catering" class="btn btn-success m-2">Book Catering</a>
+        <a href="/delivery" class="btn btn-warning m-2">Delivery Options</a>
+        <a href="/payment" class="btn btn-info m-2">Payment</a>
+    </div>
+
+    <p class="text-center mt-4">Contact us today to learn more or place an order!</p>
+</div>
+{% endblock body %}

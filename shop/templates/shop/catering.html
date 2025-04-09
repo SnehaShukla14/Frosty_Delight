@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering - Frosty Delight</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Frosty Delight</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/order">Order</a></li>
+                <li class="nav-item"><a class="nav-link" href="/delivery">Delivery</a></li>
+                <li class="nav-item"><a class="nav-link" href="/catering">Catering</a></li>
+                <li class="nav-item"><a class="nav-link" href="/payment">Payment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Catering Section -->
+    <div class="container my-5">
+        <h2 class="text-center">Catering Request</h2>
+        <p class="text-center">Planning an event? Let us provide ice cream for your guests!</p>
+        <form>
+            <div class="form-group">
+                <label for="eventDetails">Event Details:</label>
+                <textarea class="form-control" id="eventDetails" rows="4" placeholder="Describe your event" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <input type="number" class="form-control" id="guests" placeholder="Enter number of guests" required>
+            </div>
+            <div class="form-group">
+                <label for="eventDate">Event Date:</label>
+                <input type="date" class="form-control" id="eventDate" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Book Catering</button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Frosty Delight. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
